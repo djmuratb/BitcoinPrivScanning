@@ -1,7 +1,7 @@
 import random
 from bitcoin import *
 
-dosya2 = open("3btc.txt", "r")
+dosya2 = open("btc.txt", "r")
 clist1 = dosya2.read()
 a=1
 while(True):
