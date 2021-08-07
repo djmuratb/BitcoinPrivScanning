@@ -7,11 +7,12 @@ This script scans compressed and uncompressed addresses.
 
 If there is a private key match, it will be written to the XXXX.txt file along with the address.
 
-Setup:
 Download the btc.txt file and move it to the same folder as BitcoinPrivScanning.py.
-Let's install some dependency: pip install bitcoin
+
+İnstall: pip install bitcoin
 
 Usage:
+
 Run: python BitcoinPrivScanning.py
 
 
