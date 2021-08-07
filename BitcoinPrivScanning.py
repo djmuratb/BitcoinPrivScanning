@@ -1,0 +1,105 @@
+import random
+from bitcoin import *
+
+dosya2 = open("3btc.txt", "r")
+clist1 = dosya2.read()
+a=1
+while(True):
+
+    c1 = random.choice("1234567890abcdef")
+    c2 = random.choice("1234567890abcdef")
+    c3 = random.choice("1234567890abcdef")
+    c4 = random.choice("1234567890abcdef")
+    c5 = random.choice("1234567890abcdef")
+    c6 = random.choice("1234567890abcdef")
+    c7 = random.choice("1234567890abcdef")
+    c8 = random.choice("1234567890abcdef")
+    c9 = random.choice("1234567890abcdef")
+    c10 = random.choice("1234567890abcdef")
+    c11 = random.choice("1234567890abcdef")
+    c12 = random.choice("1234567890abcdef")
+    c13 = random.choice("1234567890abcdef")
+    c14 = random.choice("1234567890abcdef")
+    c15 = random.choice("1234567890abcdef")
+    c16 = random.choice("1234567890abcdef")
+    c17 = random.choice("1234567890abcdef")
+    c18 = random.choice("1234567890abcdef")
+    c19 = random.choice("1234567890abcdef")
+    c20 = random.choice("1234567890abcdef")
+    c21 = random.choice("1234567890abcdef")
+    c22 = random.choice("1234567890abcdef")
+    c23 = random.choice("1234567890abcdef")
+    c24 = random.choice("1234567890abcdef")
+    c25 = random.choice("1234567890abcdef")
+    c26 = random.choice("1234567890abcdef")
+    c27 = random.choice("1234567890abcdef")
+    c28 = random.choice("1234567890abcdef")
+    c29 = random.choice("1234567890abcdef")
+    c30 = random.choice("1234567890abcdef")
+    c31 = random.choice("1234567890abcdef")
+    c32 = random.choice("1234567890abcdef")
+    c33 = random.choice("1234567890abcdef")
+    c34 = random.choice("1234567890abcdef")
+    c35 = random.choice("1234567890abcdef")
+    c36 = random.choice("1234567890abcdef")
+    c37 = random.choice("1234567890abcdef")
+    c38 = random.choice("1234567890abcdef")
+    c39 = random.choice("1234567890abcdef")
+    c40 = random.choice("1234567890abcdef")
+    c41 = random.choice("1234567890abcdef")
+    c42 = random.choice("1234567890abcdef")
+    c43 = random.choice("1234567890abcdef")
+    c44 = random.choice("1234567890abcdef")
+    c45 = random.choice("1234567890abcdef")
+    c46 = random.choice("1234567890abcdef")
+    c47 = random.choice("1234567890abcdef")
+    c48 = random.choice("1234567890abcdef")
+    c49 = random.choice("1234567890abcdef")
+    c50 = random.choice("1234567890abcdef")
+    c51 = random.choice("1234567890abcdef")
+    c52 = random.choice("1234567890abcdef")
+    c53 = random.choice("1234567890abcdef")
+    c54 = random.choice("1234567890abcdef")
+    c55 = random.choice("1234567890abcdef")
+    c56 = random.choice("1234567890abcdef")
+    c57 = random.choice("1234567890abcdef")
+    c58 = random.choice("1234567890abcdef")
+    c59 = random.choice("1234567890abcdef")
+    c60 = random.choice("1234567890abcdef")
+    c61 = random.choice("1234567890abcdef")
+    c62 = random.choice("1234567890abcdef")
+    c63 = random.choice("1234567890abcdef")
+    c64 = random.choice("1234567890abcdef")
+
+    b = (c1 + c2 + c3 + c4 + c5 + c6 + c7 + c8 + c9 + c10 + c11 + c12 + c13 + c14 + c15 + c16 + c17 + c18 + c19 + c20 + c21 + c22 + c23 + c24 + c25 + c26 + c27 + c28 + c29 + c30 + c31 + c32 + c33 + c34 + c35 + c36 + c37 + c38 + c39 + c40 + c41 + c42 + c43 + c44 + c45 + c46 + c47 + c48 + c49 + c50 + c51 + c52 + c53 + c54 + c55 + c56 + c57 + c58 + c59 + c60 + c61 + c62 + c63 + c64)
+        
+    priv = b
+    pub = privtopub(priv)
+    pubkey1 = encode_pubkey(privtopub(priv), "bin_compressed")
+    addr = pubtoaddr(pubkey1)
+    addr1 = pubtoaddr(pub)
+    wif = encode_privkey(priv, 'wif')
+
+    aranan_varmi = clist1.find(addr1)
+
+    if aranan_varmi != -1:
+        dosya5 = open("XXXX.txt", "a")
+        dosya5.write(wif + " " + addr1 + "\n")
+        dosya5.close()
+        print("*************************Tebrikler***************")
+        print("Private Key     : " + priv)
+
+    aranan_varmi = clist1.find(addr)
+
+    if aranan_varmi != -1:
+        dosya3 = open("XXXX2.txt", "a")
+        dosya3.write(wif + " " + addr + "\n")
+        dosya3.close()
+        print("Tebrikler")
+        print("Private Key     : " + priv)
+    else:
+        print(str(a) + " " + priv+ " " + addr+ " " + addr1)
+        a +=1
+    continue
+
+
